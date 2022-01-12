@@ -20,14 +20,23 @@ a {
 .header {
   grid-column: 1/-1;
   display: flex;
+  gap: 0.5rem;
   flex-direction: column;
   align-self: center;
+  align-items: center;
   text-align: center;
 }
 
 .header .name {
   font-size: 1.4rem;
   margin: 0.5rem;
+}
+
+.header #github-link {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: max-content;
+  padding: 1rem;
 }
 
 .card {
@@ -44,10 +53,11 @@ a {
   width: 100%;
   top: 10%;
   right: 0%;
-  padding: 1rem;
+  padding: 0.3rem;
   font-size: 2rem;
   text-align: center;
   font-style: bold;
+  z-index: 100;
 }
 
 .card a::before {
@@ -57,8 +67,8 @@ a {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  mix-blend-mode: color-dodge;
+  background-color: rgba(128, 128, 128, 0.7);
+  mix-blend-mode: hue;
   transform: skew(20deg);
 }
 
